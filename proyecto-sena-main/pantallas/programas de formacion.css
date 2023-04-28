@@ -1,0 +1,311 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{
+  height: 80px;
+  width: 100%;
+
+}
+
+.icono{
+  position: absolute;
+  padding: 20px 50px;
+}
+
+.logo{
+  height: 100px;
+}
+
+nav ul{
+  margin-top: 50px;
+  float: right;
+  margin-right: 300px;
+  
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li a{
+  color: rgb(2, 2, 2);
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+li a.lista, li a:hover{
+  background: #04a045;
+  transform: .5s;
+
+}
+.checkbtn{
+  font-size: 30px;
+  color:white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+  
+
+}
+@media (max-width:999px){
+  .icono{
+    padding-left: 0px;
+  }
+  nav ul li a{
+    font-size: 16px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width:850px){
+  .checkbtn{
+    display: block;
+
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #5a646e;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50PX 0;
+    line-height: 30PX;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  li a:hover, li a.lista{
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.programa{
+  height: 250px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+h1{
+  margin-left: 300px;
+  margin-top: -150px;
+}
+
+.input-container {
+  position: relative;
+  float: right;
+  right: 100px;
+  top: -90px;
+  display: flex;
+  height: 2.8rem;
+  width: 100%;
+  min-width: 250px;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .05);
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid  #3FBF77;
+  background-color: transparent;
+  padding: 0.625rem 20px 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid rgb(0, 68, 255);
+}
+
+.invite-btn {
+  position: absolute;
+  width: 65px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: rgb(0, 68, 255);
+  color: #fff;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: .6s ease;
+}
+
+.invite-btn:hover {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 8px;
+}
+
+.input-container input:placeholder-shown ~ .invite-btn {
+  pointer-events: none;
+  background: #3FBF77;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  opacity: 0.5;
+}
+.image img{
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+  left: 550px;
+  top: 450px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+}
+
+.input-group{
+  position: absolute;
+  left: 300px;
+  top: 20px;
+}
+.input {
+  width: 600px;
+  max-width: 800px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: .6rem;
+  font-size: .9rem;
+  font-weight: bold;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: #0c7c3e;
+}
+
+.input-group:hover .label, .input:focus {
+  color: #1021bbc2;
+}
+.input-group1{
+  position: absolute;
+  left: 300px;
+  top: 80px;
+
+}
+.input-group2{
+  position: absolute;
+  left: 300px;
+  top: 140px;
+}
+  
+.input-group3{
+  position:absolute;
+  left:300px;
+  top:200px;
+
+}
+
+P{
+  display: flex;
+  margin-top: 600px;
+  margin-left: 1000px;
+  font-size: 35px;
+  
+}
+.fecha{
+  background:  #3FBF77;
+}
+
+table,th,td{
+  border-collapse: collapse;
+  margin-left: 500px;
+  margin-top: 35px;
+  
+  
+
+}
+th,td{
+  padding: 10px;
+  text-align: center;
+  
+
+}
+table,tr{
+
+  border-radius: 10px;
+}
+table,td{
+  background: #bebebe;
+  border-radius: 10px;
+}
+.info{
+  width: 1600px;
+  margin-left: 170px;
+  box-shadow: 15px 10px 12px #3FBF77, -15px 10px 12px #3FBF77;
+ 
+
+}
+.info tr{
+  background: #bebebe;
+  border: 1px solid  #3FBF77;
+  
+ 
+}
+.info tr td{
+  border: 1px solid  #3FBF77;
+  border-collapse: collapse;
+  
+}
